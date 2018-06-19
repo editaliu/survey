@@ -14,47 +14,47 @@
         <h1>How are you today?</h1>
     </header>
     <main>
-       <div id="description">
-           <p>Answer these questions and let us know more about you!</p>
-       </div>
+        <div id="description">
+            <p>Answer these questions and let us know more about you!</p>
+        </div>
         <form id="survey-form" method="GET" action="#">
             <fieldset id="personal">
-            
-            <legend align="center">Personal information (must fill to continue)</legend>
-            <div class="fields field1">
-<!--            just write Last name:<br><input id="lastname" type="text" name="lastname" required placeholder="Enter your last name"><br>
+
+                <legend align="center">Personal information (must fill to continue)</legend>
+                <div class="fields field1">
+                    <!--            just write Last name:<br><input id="lastname" type="text" name="lastname" required placeholder="Enter your last name"><br>
            OR USE THIS: <label for="firstn">First name:</label> 
            using LABELS make able to "check" the field by clicking just on the word also if "for" is the same as input "id"-->
-           <div id="info">
-           <div class="label1">
-           <label class="labels" id="label-name" for="name">First name: </label>
-            <input class="inputs" id="name" type="text" name="name" required placeholder="Enter your name" pattern="[A-Za-z]{2,40}">
-            </div>
-<!--            {1,50} USER NEEDS TO ENTER THE NAME WITH 1-50 DIGITS 
+                    <div id="info">
+                        <div class="label1">
+                            <label class="labels" id="label-name" for="name">First name: </label>
+                            <input class="inputs" id="name" type="text" name="name" required placeholder="Enter your name" pattern="[A-Za-z]{2,40}">
+                        </div>
+                        <!--            {1,50} USER NEEDS TO ENTER THE NAME WITH 1-50 DIGITS 
           MEENS ALL LETTERS INCLUDED, NO NUMBERS [A-Za-z]-->
-           <div class="label1">
-            <label class="labels" id="label-lastn" for="lastname">Last name:</label>
-            <input class="inputs" id="lastname" type="text" name="lastname" placeholder="Enter your last name" required pattern="[A-Za-z]{1,50}">
-            </div>
-            <div class="label1">
-            <label class="labels" id="label-name" for="number" >Age:</label> 
-            <input class="inputs" id="number" required type="number" placeholder="Enter your age" min="7" max="120">
-            </div>
-            <div class="label1">
-            <label class="labels" id="label-mail" for="email">E-mail:</label>
-            <input class="inputs" required id="email" type="email" name="email" placeholder="Enter your e-mail adress">
-               </div>
-                </div>
-<!--                required means that user also get a notice on mouse over that he NEED to fill out the field -->
+                        <div class="label1">
+                            <label class="labels" id="label-lastn" for="lastname">Last name:</label>
+                            <input class="inputs" id="lastname" type="text" name="lastname" placeholder="Enter your last name" required pattern="[A-Za-z]{1,50}">
+                        </div>
+                        <div class="label1">
+                            <label class="labels" id="label-name" for="number">Age:</label>
+                            <input class="inputs" id="number" required type="number" placeholder="Enter your age" min="7" max="120">
+                        </div>
+                        <div class="label1">
+                            <label class="labels" id="label-mail" for="email">E-mail:</label>
+                            <input class="inputs" required id="email" type="email" name="email" placeholder="Enter your e-mail adress">
+                        </div>
+                    </div>
+                    <!--                required means that user also get a notice on mouse over that he NEED to fill out the field -->
                 </div>
             </fieldset>
-            
-            <fieldset id="questions"> 
-            <legend align="center">Questions</legend>
-            <div class="fields">
-            <p id="fields2"> How are you feeling today? <i class="far fa-smile"></i></p>
-              <div id="feeling">
-               <select id="dropdown" name="day">
+
+            <fieldset id="questions">
+                <legend align="center">Questions</legend>
+                <div class="fields">
+                    <p id="fields2"> How are you feeling today? <i class="far fa-smile"></i></p>
+                    <div id="feeling">
+                        <select id="dropdown" name="day">
                <option disabled selected value>Select from here</option>
                 <option value="good">Good</option>
                 <option value="bad">Bad</option>
@@ -62,79 +62,79 @@
                 <option value="perfect">Perfect!</option>
                 <option value="why">Why asking?</option>
             </select>
-            </div>
-            </div>
-            
-            
-            <div class="fields">
-            <p>What could make you happy now? <i class="far fa-check-square"></i></p>
-            <div id="happynow">
-            <div id="one1">
-            <input type="checkbox" name="happy" id="programming" value="programming"><label for="programming">Programming</label><br>
-            <input type="checkbox" name="happy" id="rain" value="rain"><label for="rain">Rain</label><br>
-            <input type="checkbox" name="happy" id="weather" value="weather"><label for="weather">Good weather</label><br>
-            <input type="checkbox" name="happy" id="flowers" value="flowers"><label for="flowers">Flowers</label><br>
-            <input type="checkbox" name="happy" id="nature" value="nature"><label for="nature">Nature</label><br>
-            </div>
-            <div id="two1">
-            <input type="checkbox" name="happy" id="cake" value="cake"><label for="cake">Cake</label><br>
-            <input type="checkbox" name="happy" id="coffee" value="coffee"><label for="coffee">Coffee</label><br>
-            <input type="checkbox" name="happy" id="friends" value="friends"><label for="friends">Friends</label><br>
-            <input type="checkbox" name="happy" id="pizza" value="pizza"><label for="pizza">Pizza</label><br>
-            <input type="checkbox" name="happy" id="beer" value="beer"><label for="beer">Beer</label><br>
-            </div>
-            <div id="three1">
-            <input type="checkbox" name="happy" id="no" value="no"><label for="no">Nothing</label><br>
-            <input type="checkbox" name="happy" id="sports" value="sports"><label for="sports">Sports</label><br>
-            <input type="checkbox" name="happy" id="parties" value="parties"><label for="parties">Parties</label><br>
-            <input type="checkbox" name="happy" id="sleep" value="sleep"><label for="sleep">Sleep</label><br>
-            <input type="checkbox" name="happy" id="everything" value="everything"><label for="everything">Everything!</label><br>
-            </div>
-            </div>
-            </div>
-            
-            <div class="fields">
-            <p>What kind of person are you today? <i class="far fa-hand-spock"></i></p>
-            <div id="today">
-            <div id="one2">
-            <input type="radio" name="kind" id="program" value="program" checked><label for="program">Programmer</label><br>
-            <input type="radio" name="kind" id="dev" value="dev"><label for="dev">Developer</label><br>
-            <input type="radio" name="kind" id="bored" value="bored"><label for="bored">Bored</label><br>
-            <input type="radio" name="kind" id="awesome" value="awesome"><label for="awesome">Awesome</label><br>
-            <input type="radio" name="kind" id="energy" value="energy"><label for="energy">Energetic</label><br>
-            </div>
-            <div id="two2">
-            <input type="radio" name="kind" id="program" value="program" checked><label for="program">Programmer</label><br>
-            <input type="radio" name="kind" id="dev" value="dev"><label for="dev">Developer</label><br>
-            <input type="radio" name="kind" id="bored" value="bored"><label for="bored">Bored</label><br>
-            <input type="radio" name="kind" id="awesome" value="awesome"><label for="awesome">Awesome</label><br>
-            <input type="radio" name="kind" id="drunk" value="drunk"><label for="drunk">Drunk</label><br>
-            </div>
-            <div id="three2">
-            <input type="radio" name="kind" id="lazy" value="lazy"><label for="lazy">Lazy</label><br>
-            <input type="radio" name="kind" id="inlove" value="inlove"><label for="inlove">Inlove</label><br>
-            <input type="radio" name="kind" id="attr" value="attr"><label for="attr">Attractive</label><br>
-            <input type="radio" name="kind" id="sad" value="sad"><label for="sad">Sad</label><br>
-            <input type="radio" name="kind" id="happy" value="happy"><label for="happy">Happy</label><br>
-            </div>
-            </div>
-            </div>
-            
-            <div class="fields">
-            <div id="textarea">
-            <p>In case if you have something else to say :) <i class="far fa-comment"></i></p>
-            <textarea name="else" rows="5"></textarea>
-            <br>
-            <input id="button" type="submit" value="Submit">
-            </div>
-            </div>
+                    </div>
+                </div>
+
+
+                <div class="fields">
+                    <p>What could make you happy now? <i class="far fa-check-square"></i></p>
+                    <div id="happynow">
+                        <div id="one1">
+                            <input type="checkbox" name="happy" id="programming" value="programming"><label for="programming">Programming</label><br>
+                            <input type="checkbox" name="happy" id="rain" value="rain"><label for="rain">Rain</label><br>
+                            <input type="checkbox" name="happy" id="weather" value="weather"><label for="weather">Good weather</label><br>
+                            <input type="checkbox" name="happy" id="flowers" value="flowers"><label for="flowers">Flowers</label><br>
+                            <input type="checkbox" name="happy" id="nature" value="nature"><label for="nature">Nature</label><br>
+                        </div>
+                        <div id="two1">
+                            <input type="checkbox" name="happy" id="cake" value="cake"><label for="cake">Cake</label><br>
+                            <input type="checkbox" name="happy" id="coffee" value="coffee"><label for="coffee">Coffee</label><br>
+                            <input type="checkbox" name="happy" id="friends" value="friends"><label for="friends">Friends</label><br>
+                            <input type="checkbox" name="happy" id="pizza" value="pizza"><label for="pizza">Pizza</label><br>
+                            <input type="checkbox" name="happy" id="beer" value="beer"><label for="beer">Beer</label><br>
+                        </div>
+                        <div id="three1">
+                            <input type="checkbox" name="happy" id="no" value="no"><label for="no">Nothing</label><br>
+                            <input type="checkbox" name="happy" id="sports" value="sports"><label for="sports">Sports</label><br>
+                            <input type="checkbox" name="happy" id="parties" value="parties"><label for="parties">Parties</label><br>
+                            <input type="checkbox" name="happy" id="sleep" value="sleep"><label for="sleep">Sleep</label><br>
+                            <input type="checkbox" name="happy" id="everything" value="everything"><label for="everything">Everything!</label><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fields">
+                    <p>What kind of person are you today? <i class="far fa-hand-spock"></i></p>
+                    <div id="today">
+                        <div id="one2">
+                            <input type="radio" name="kind" id="program" value="program" checked><label for="program">Programmer</label><br>
+                            <input type="radio" name="kind" id="dev" value="dev"><label for="dev">Developer</label><br>
+                            <input type="radio" name="kind" id="bored" value="bored"><label for="bored">Bored</label><br>
+                            <input type="radio" name="kind" id="awesome" value="awesome"><label for="awesome">Awesome</label><br>
+                            <input type="radio" name="kind" id="energy" value="energy"><label for="energy">Energetic</label><br>
+                        </div>
+                        <div id="two2">
+                            <input type="radio" name="kind" id="program" value="program" checked><label for="program">Programmer</label><br>
+                            <input type="radio" name="kind" id="dev" value="dev"><label for="dev">Developer</label><br>
+                            <input type="radio" name="kind" id="bored" value="bored"><label for="bored">Bored</label><br>
+                            <input type="radio" name="kind" id="awesome" value="awesome"><label for="awesome">Awesome</label><br>
+                            <input type="radio" name="kind" id="drunk" value="drunk"><label for="drunk">Drunk</label><br>
+                        </div>
+                        <div id="three2">
+                            <input type="radio" name="kind" id="lazy" value="lazy"><label for="lazy">Lazy</label><br>
+                            <input type="radio" name="kind" id="inlove" value="inlove"><label for="inlove">Inlove</label><br>
+                            <input type="radio" name="kind" id="attr" value="attr"><label for="attr">Attractive</label><br>
+                            <input type="radio" name="kind" id="sad" value="sad"><label for="sad">Sad</label><br>
+                            <input type="radio" name="kind" id="happy" value="happy"><label for="happy">Happy</label><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fields">
+                    <div id="textarea">
+                        <p>In case if you have something else to say :) <i class="far fa-comment"></i></p>
+                        <textarea name="else" rows="5"></textarea>
+                        <br>
+                        <input id="button" type="submit" value="Submit">
+                    </div>
+                </div>
             </fieldset>
         </form>
-        
+
 
     </main>
     <footer>@ midnight ©</footer>
-    
+
     <scrip src="JSsurvey.js"></scrip>
 </body>
 
