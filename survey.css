@@ -1,0 +1,104 @@
+html, body{
+    background-color: burlywood;
+    font-family: 'Raleway', sans-serif;
+}
+legend{
+    font-weight: bold;
+}
+#survey-form{
+    padding-top: 2%;
+}
+#questions{
+    margin-top: 2%;
+}
+
+header, #description, #button{
+    text-align: center;
+}
+
+#personal, #questions {
+    width: 40%;
+    margin-left: 29%;
+/*    padding-left: 20%;*/
+}
+
+.field1, #fields2{
+    padding-top: 5%;
+}
+.field1{
+    padding-right: 22%;
+    padding-left: 4%;
+}
+.labels{
+    width: 200px;
+    text-align: right;
+}
+.inputs{
+    width: 145px;
+    margin-bottom: 2%;
+}
+
+.label1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+p, legend, #textarea, #feeling{
+    text-align: center;
+}
+
+.fields{
+    padding-bottom: 5%;
+}
+
+
+#happynow, #today{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+@media (max-width: 900px){
+.label1, #happynow, #today{
+    flex-direction: column;
+}
+  .labels{
+    width: auto;
+    text-align: center;
+}
+.inputs{
+    width: auto;  
+}  
+.field1{
+    padding-right: 15%;
+    padding-left: 15%;
+}
+}
+
+
+#button{
+    margin-top: 7%;
+    padding: 10px 35px 10px 35px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+    border-color: black;
+    
+}
+#button:hover{
+    background-color: #2A2624;
+    border-color:#2A2624;
+}
+
+
+footer{
+    margin-top: 2%;
+    padding: 2%;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
